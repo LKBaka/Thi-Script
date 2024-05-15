@@ -1,0 +1,12 @@
+D:\soft\Thi Script\bin\Debug\Thi Script.exe.config
+D:\soft\Thi Script\bin\Debug\Thi Script.exe
+D:\soft\Thi Script\bin\Debug\Thi Script.pdb
+D:\soft\Thi Script\bin\Debug\Thi Script.xml
+D:\soft\Thi Script\obj\Debug\Thi Script.vbproj.AssemblyReference.cache
+D:\soft\Thi Script\obj\Debug\Thi_Script.Resources.resources
+D:\soft\Thi Script\obj\Debug\Thi Script.vbproj.GenerateResource.cache
+D:\soft\Thi Script\obj\Debug\Thi Script.vbproj.CoreCompileInputs.cache
+D:\soft\Thi Script\obj\Debug\Thi Script.exe
+D:\soft\Thi Script\obj\Debug\Thi Script.xml
+D:\soft\Thi Script\obj\Debug\Thi Script.pdb
+D:\soft\Thi Script\obj\Debug\Thi_Script.InputBox_Thi.resources

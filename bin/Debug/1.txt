@@ -1,0 +1,18 @@
+new KaliLinux,恋爱桑
+say fKaliLinux是#KaliLinux#吗
+/clear
+say 按下任意键继续
+inputbox KaliLinux是谁,KaliLinux是谁,Normal
+inputbox KaliLinux是谁,KaliLinux是谁,Flat
+new test,10
+say fTest为:#test#
+test += 10
+say fTest为:#test#
+test -= 5
+say fTest为:#test#
+test *= 5
+say fTest为:#test#
+test /= 5
+say fTest为:#test#
+say f--单行多量:#KaliLinux##test#
+WaitKeyDown
