@@ -1,18 +1,22 @@
+clear
 new KaliLinux,恋爱桑
 say fKaliLinux是#KaliLinux#吗
-/clear
+//clear
 say 按下任意键继续
-inputbox KaliLinux是谁,KaliLinux是谁,Normal
-inputbox KaliLinux是谁,KaliLinux是谁,Flat
-new test,10
+inputbox 无极限是谁,无极限是谁,Normal
+inputbox 无极限是谁,无极限是谁,Flat
+new test,1
 say fTest为:#test#
 test += 10
 say fTest为:#test#
-test -= 5
+test -= 10
 say fTest为:#test#
-test *= 5
+test *= 1
 say fTest为:#test#
-test /= 5
+test /= 3
+test = 102
+test /= 3
 say fTest为:#test#
+test1 = 2 // 此行是错误代码
 say f--单行多量:#KaliLinux##test#
 WaitKeyDown
