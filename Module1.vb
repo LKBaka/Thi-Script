@@ -6,7 +6,7 @@ Imports System.Windows.Forms
 
 Module Module1
     Public vars As New Dictionary(Of String, String)
-    Public commands As New List(Of String) From {"say", "new", "clear", "inputbox", "waitkeydown"}
+    Public commands As New List(Of String) From {"say", "new", "clear", "inputbox", "waitkeydown", "exit"}
     Public InputBox_ As New InputBox_Thi()
     Function _to_int(str As String) As Integer
         Try
@@ -25,7 +25,7 @@ Module Module1
         End If
     End Sub
     Sub Command_Thi()
-        File_Thi("D:\soft\Thi Script\bin\Debug\1.txt")
+        File_Thi("D:\soft\Thi-Script\bin\Debug\test.txt")
     End Sub
 
     Async Sub File_Thi(path As String)
@@ -148,7 +148,7 @@ Module Module1
                     args.Add(arg)
                 Next
 
-                'args(2)操作符，args(3)数字
+                'args(2)操作符，args(3)数值
                 If args(2) = "+=" Then
                     Dim add_value = _to_int(args(3))
                     Dim old_value = _to_int(vars(args(1)))
@@ -168,7 +168,14 @@ Module Module1
                     Dim divide_value = _to_int(args(3))
                     Dim old_value = _to_int(vars(args(1)))
                     If divide_value <> 0 And old_value <> 0 Then vars(args(1)) = old_value / divide_value
+                ElseIf args(2) = "=" Then
+                    Dim value = args(3)
+                    If value <> 0 Then vars(args(1)) = value.ToString
                 End If
+            ElseIf codes(codeidx).Substring(0, 2) = "//" Then
+                Continue For
+            Else
+                Console.WriteLine($"命令或变量不存在:[{codes(codeidx)}]")
             End If
         Next
     End Sub
